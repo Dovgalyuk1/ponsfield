@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>$PONSFIELD — This Is My Grass</title>
+<meta name="description" content="Lord Ponsfield. Chairman of the Backyard. Now a coin.">
+<link rel="icon" href="assets/ponsfield-mascot.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Bricolage+Grotesque:wght@600;800&family=Overpass:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- decorative background: sun + soft clouds, fixed to hero -->
+
+<!-- NAV -->
+<header class="topbar">
+  <div class="topbar__inner">
+    <a href="#top" class="brand">
+      <img src="assets/ponsfield-mascot.jpg" alt="" class="brand__thumb">
+      <span>$PONSFIELD</span>
+    </a>
+    <nav class="topbar__links">
+      <a href="#gazette">Gazette</a>
+      <a href="#household">Household</a>
+      <a href="#passport">Dossier</a>
+      <a href="#ca" class="topbar__cta">Buy</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__sun" aria-hidden="true"></div>
+    <div class="hero__blob hero__blob--left" aria-hidden="true"></div>
+    <div class="hero__blob hero__blob--right" aria-hidden="true"></div>
+
+    <svg class="doodle doodle--sparkle1" aria-hidden="true" viewBox="0 0 40 40"><path d="M20 0 L24 16 L40 20 L24 24 L20 40 L16 24 L0 20 L16 16 Z" fill="var(--marigold)"/></svg>
+    <svg class="doodle doodle--sparkle2" aria-hidden="true" viewBox="0 0 40 40"><path d="M20 0 L24 16 L40 20 L24 24 L20 40 L16 24 L0 20 L16 16 Z" fill="var(--cloud)"/></svg>
+    <svg class="doodle doodle--leaf1" aria-hidden="true" viewBox="0 0 32 20"><path d="M2 18 C2 6 14 2 30 2 C26 14 16 18 2 18 Z" fill="var(--grass)"/></svg>
+    <svg class="doodle doodle--leaf2" aria-hidden="true" viewBox="0 0 32 20"><path d="M2 18 C2 6 14 2 30 2 C26 14 16 18 2 18 Z" fill="var(--leaf-light)"/></svg>
+    <svg class="doodle doodle--coin" aria-hidden="true" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" fill="var(--marigold)" stroke="var(--ink)" stroke-width="2.5"/><text x="16" y="21" font-family="Overpass" font-weight="800" font-size="14" fill="var(--ink)" text-anchor="middle">$</text></svg>
+
+    <div class="hero__wordmark">
+      <h1 class="hero__title">
+        <span class="hero__sprout" aria-hidden="true">🌿</span>
+        PONSFIELD
+      </h1>
+      <p class="hero__subtitle">THE LANDLORD CAT</p>
+      <p class="hero__tag"><span class="doodle-heart">🧡</span> This is MY grass. You're standing on my equity. <span class="doodle-heart">🧡</span></p>
+    </div>
+
+    <div class="hero__actions">
+      <a href="#ca" class="btn btn--marigold">Buy $PONSFIELD</a>
+      <a href="#" class="btn btn--outline" data-role="chart-link">View Chart</a>
+      <a href="#" class="btn btn--outline" data-role="x-link">Follow on X</a>
+    </div>
+
+    <div class="hero__portrait">
+      <img src="assets/ponsfield-mascot.jpg" alt="Lord Ponsfield walking across his lawn, unimpressed.">
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-card__row">
+        <span>PATIENCE LEVEL</span>
+        <span>FULLY DEPLETED</span>
+      </div>
+      <div class="stat-card__track">
+        <div class="stat-card__fill"></div>
+        <div class="stat-card__knob"></div>
+      </div>
+      <div class="stat-card__row stat-card__row--small">
+        <span>PONSFIELD</span>
+        <span>FULLY DEPLETED</span>
+      </div>
+    </div>
+
+    <!-- LIVE TICKER -->
+    <div class="ticker" id="ca">
+      <div class="ticker__card">
+        <span class="ticker__label">LIVE PRICE</span>
+        <span class="ticker__value ticker__value--big" data-field="price">TBD</span>
+        <div class="ticker__sub">
+          <span>24H VOL <b data-field="vol">TBD</b></span>
+          <span>24H <b data-field="change">TBD</b></span>
+        </div>
+      </div>
+      <div class="ticker__card ticker__card--wide">
+        <span class="ticker__label">CONTRACT ADDRESS</span>
+        <div class="ca-row">
+          <span class="ticker__value ticker__value--ca" data-field="ca">Not deployed yet</span>
+          <button class="copy-btn" id="copyBtn" type="button">Copy</button>
+        </div>
+        <p class="ticker__note">Lord Ponsfield hasn't been formally minted onto any chain yet — no numbers are
+          being invented on his behalf. This box lights up the moment a real contract address goes into
+          <code>script.js</code>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- YARD / SOCIALS -->
+  <section class="yard">
+    <div class="fence" aria-hidden="true"></div>
+    <div class="yard__inner">
+      <div class="yard__trees" aria-hidden="true">
+        <span class="tree tree--1"></span>
+        <span class="tree tree--2"></span>
+        <span class="tree tree--3"></span>
+        <span class="tree tree--4"></span>
+      </div>
+
+      <img class="yard__mascot" src="assets/ponsfield-mascot.jpg" alt="Lord Ponsfield patrolling the yard.">
+
+      <div class="yard__buttons">
+        <a href="#" class="pill pill--marigold" data-role="chart-link">
+          <span>$PONSFIELD chart</span>
+        </a>
+        <a href="#" class="pill pill--cloud" data-role="x-link">
+          <span>Join us on 𝕏</span>
+        </a>
+        <a href="#" class="pill pill--marigold" data-role="telegram-link">
+          <span>Ponsfield on Telegram</span>
+        </a>
+        <a href="#" class="pill pill--cloud" data-role="x-link">
+          <span>Ponsfield on Reddit</span>
+        </a>
+        <a href="#" class="pill pill--marigold" data-role="x-link">
+          <span>X group chat</span>
+        </a>
+      </div>
+
+      <a href="#howto" class="cta-bar">I'm new, how do I buy $PONSFIELD?</a>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>THIS IS MY GRASS.</span><span>THIS IS MY GRASS.</span><span>THIS IS MY GRASS.</span>
+      <span>THIS IS MY GRASS.</span><span>THIS IS MY GRASS.</span><span>THIS IS MY GRASS.</span>
+      <span>THIS IS MY GRASS.</span><span>THIS IS MY GRASS.</span>
+    </div>
+    <div class="marquee__track" aria-hidden="true">
+      <span>THIS IS MY GRASS.</span><span>THIS IS MY GRASS.</span><span>THIS IS MY GRASS.</span>
+      <span>THIS IS MY GRASS.</span><span>THIS IS MY GRASS.</span><span>THIS IS MY GRASS.</span>
+      <span>THIS IS MY GRASS.</span><span>THIS IS MY GRASS.</span>
+    </div>
+  </div>
+
+  <!-- GAZETTE -->
+  <section class="gazette" id="gazette">
+    <p class="section-kicker">THE YARD GAZETTE</p>
+    <h2 class="section-title">Nobody is talking about him. Yet.</h2>
+    <p class="gazette__lede">Lord Ponsfield does not chase engagement. Engagement, in time, chases him. Until
+      then, here is what the household staff have on record.</p>
+
+    <div class="gazette__grid">
+      <blockquote class="gazette__card">
+        <p>"He walked past the food bowl like it owed him money. We refilled it anyway."</p>
+        <cite>— Estate Kitchen Log, entry #1</cite>
+      </blockquote>
+      <blockquote class="gazette__card">
+        <p>"Asked to move off the welcome mat. He did not move. We now call it his mat."</p>
+        <cite>— Estate Kitchen Log, entry #2</cite>
+      </blockquote>
+      <blockquote class="gazette__card">
+        <p>"Sat in the exact center of the lawn for eleven minutes. Ownership was implied."</p>
+        <cite>— Estate Kitchen Log, entry #3</cite>
+      </blockquote>
+      <blockquote class="gazette__card gazette__card--empty">
+        <p>Your quote could go here, once the internet catches up.</p>
+        <cite>— reserved</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- SIGHTING -->
+  <section class="sighting">
+    <p class="section-kicker">CONFIRMED ESTATE SIGHTING</p>
+    <h2 class="section-title">The grounds have been surveyed.</h2>
+    <figure class="polaroid">
+      <img src="assets/ponsfield-mascot.jpg" alt="Lord Ponsfield on patrol, mid-stride, visibly unimpressed with the grounds.">
+      <figcaption>ACTUAL ESTATE EVIDENCE &bull; LOCATION CLASSIFIED</figcaption>
+    </figure>
+  </section>
+
+  <!-- HOUSEHOLD -->
+  <section class="household" id="household">
+    <p class="section-kicker">THE HOUSEHOLD</p>
+    <h2 class="section-title">Everyone reports to someone.</h2>
+    <ol class="ranks">
+      <li class="ranks__item">
+        <span class="ranks__num">01</span>
+        <div>
+          <h3>Tenant</h3>
+          <p>Holds bags. Pays on time. Has met Lord Ponsfield exactly once, briefly, from a distance.</p>
+        </div>
+      </li>
+      <li class="ranks__item">
+        <span class="ranks__num">02</span>
+        <div>
+          <h3>Groundskeeper</h3>
+          <p>Maintains the lawn Lord Ponsfield merely stands on. Unclear who works for whom.</p>
+        </div>
+      </li>
+      <li class="ranks__item">
+        <span class="ranks__num">03</span>
+        <div>
+          <h3>Estate Manager</h3>
+          <p>Handles correspondence. Has been growled at. Considers it a promotion.</p>
+        </div>
+      </li>
+      <li class="ranks__item">
+        <span class="ranks__num">04</span>
+        <div>
+          <h3>Board Member</h3>
+          <p>Attends meetings Lord Ponsfield does not attend. Reports outcomes to an empty cushion.</p>
+        </div>
+      </li>
+      <li class="ranks__item ranks__item--top">
+        <span class="ranks__num">05</span>
+        <div>
+          <h3>Lord Ponsfield</h3>
+          <p>Chairman of the Backyard. Majority Shareholder of Your Attention. Does not report to anyone.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- PASSPORT -->
+  <section class="passport" id="passport">
+    <p class="section-kicker">OFFICIAL DOSSIER</p>
+    <h2 class="section-title">Everything you're allowed to know.</h2>
+    <div class="passport__grid">
+      <div class="passport__card passport__card--grass">
+        <span class="passport__k">SPECIES</span>
+        <span class="passport__v">One landed gentleman, built like old money.</span>
+      </div>
+      <div class="passport__card passport__card--leaf">
+        <span class="passport__k">RANGE</span>
+        <span class="passport__v">The entire yard. Possibly the neighbor's too. Under review.</span>
+      </div>
+      <div class="passport__card passport__card--marigold">
+        <span class="passport__k">STATUS</span>
+        <span class="passport__v">Chairman of the Backyard. Now a coin.</span>
+      </div>
+      <div class="passport__card passport__card--grass">
+        <span class="passport__k">TEMPERAMENT</span>
+        <span class="passport__v">Unbothered. Occasionally offended by weather.</span>
+      </div>
+      <div class="passport__card passport__card--leaf">
+        <span class="passport__k">NET WORTH</span>
+        <span class="passport__v">Immeasurable, mostly in grass.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO BUY -->
+  <section class="howto" id="howto">
+    <p class="section-kicker">HOW TO PAY RENT</p>
+    <h2 class="section-title">Four steps. He is not going to explain twice.</h2>
+    <div class="howto__grid">
+      <div class="howto__card">
+        <span class="howto__num">1</span>
+        <h3>Get a wallet</h3>
+        <p>Something that can hold a token. He does not care which one.</p>
+      </div>
+      <div class="howto__card">
+        <span class="howto__num">2</span>
+        <h3>Fund it</h3>
+        <p>Enough to cover the trade and the fees. He does not cover fees.</p>
+      </div>
+      <div class="howto__card">
+        <span class="howto__num">3</span>
+        <h3>Find $PONSFIELD</h3>
+        <p>Paste the contract address once it exists. Above, when it's live.</p>
+      </div>
+      <div class="howto__card">
+        <span class="howto__num">4</span>
+        <h3>Swap</h3>
+        <p>Confirm the transaction. Congratulations, you now pay rent here too.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <img src="assets/ponsfield-mascot.jpg" alt="" class="footer__thumb">
+      <div>
+        <p class="footer__name">$PONSFIELD</p>
+        <p class="footer__note">Lord Ponsfield is a real housecat. Please wipe your feet before entering his lawn.</p>
+      </div>
+    </div>
+    <div class="footer__links">
+      <a href="#" data-role="x-link">X / Twitter</a>
+      <a href="#" data-role="telegram-link">Telegram</a>
+      <a href="#" data-role="chart-link">Chart</a>
+    </div>
+  </div>
+  <p class="footer__legal">$PONSFIELD is a meme token with no intrinsic value or expectation of financial return.
+    Nothing on this site is financial advice. There is no formal team behind Lord Ponsfield, only staff. Buy at
+    your own risk, on your own lawn.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
